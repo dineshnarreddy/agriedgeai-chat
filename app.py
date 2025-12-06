@@ -26,7 +26,8 @@ def run_ai_framework(user_message: str, history: list[str]) -> str:
     Right now it calls mango.chat_backend.answer_query().
     """
     try:
-        from mango.chat_backend import answer_query
+        from chat_backend import answer_query
+
 
         result = answer_query(user_message, history)
         return result
